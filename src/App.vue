@@ -18,6 +18,7 @@
     </section>
   </div>
 </template>
+
 <script>
   import header from './views/header/header.vue';
   const ERR_OK = "000";
