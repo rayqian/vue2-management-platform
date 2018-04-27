@@ -10,10 +10,10 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
-    "vue":"^2.5.13",
-    "vue-router":"^3.0.1",
-    "axios":"^0.18.0",
-    "element-ui":"^2.2.0",
+    "vue": "^2.5.13",
+    "vue-router": "^3.0.1",
+    "axios": "^0.18.0",
+    "element-ui": "^2.2.0",
     "echarts": "^3.5.2",
     "babel-runtime": "^6.0.0"
   },
@@ -56,7 +56,7 @@
     "vue-style-loader": "^1.0.0",
     "vue-template-compiler": "^2.1.0",
     "webpack": "^1.13.2",
-    "webpack-bundle-analyzer":"^2.11.0",
+    "webpack-bundle-analyzer": "^2.11.0",
     "webpack-dev-middleware": "^1.8.3",
     "webpack-hot-middleware": "^2.12.2",
     "webpack-merge": "^0.14.1"
