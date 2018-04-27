@@ -6,10 +6,12 @@ import axios from 'axios';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import App from './App';
+import Layout from './Layout';
+
 import Index from './views/index/index';
-import Table from './views/table/table';
-import Form from './views/form/form';
-import ue from './views/editor/editor';
+// import Table from './views/table/table';
+// import Form from './views/form/form';
+// import ue from './views/editor/editor';
 import 'font-awesome/css/font-awesome.min.css';
 import Mock from './mock/mock';
 
@@ -46,12 +48,17 @@ Vue.use(ElementUI);
 let routes = [
   {
     path: '/',
-    component: App,
+    component: Layout,
+    redirect: '/a/b',
     children: [
-      {path: '/index', component: Index, name: 'index', class: 'fa-line-chart'},
-      {path: '/table', component: Table, name: 'table', class: 'fa-table'},
-      {path: '/form', component: Form, name: 'form', class: 'fa-newspaper-o'},
-      {path: '/editor', component: ue, name: 'editor', class: 'fa-plug'}
+      {
+        path: 'a',
+        component: App,
+        name: 'a',
+        class: 'fa-line-chart',
+        children: [
+          {path: 'b', component: Index, name: 'b', class: 'fa-line-chart'}
+        ]}
     ]
   }
 ];
