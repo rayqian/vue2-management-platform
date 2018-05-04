@@ -49,16 +49,26 @@ let routes = [
   {
     path: '/',
     component: Layout,
-    redirect: '/a/b',
+    redirect: '/monitor/b',
     children: [
       {
-        path: 'a',
+        path: 'monitor',
         component: App,
-        name: 'a',
+        name: 'monitor',
         class: 'fa-line-chart',
         children: [
-          {path: 'b', component: Index, name: 'b', class: 'fa-line-chart'}
-        ]}
+          {path: 'b', component: Index, name: 'b'}
+        ]
+      },
+      {
+        path: 'event',
+        component: App,
+        name: 'event',
+        class: 'fa-line-chart',
+        children: [
+          {path: 'c', component: Index, name: 'c', class: 'fa-line-chart'}
+        ]
+      }
     ]
   }
 ];
